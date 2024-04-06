@@ -1,0 +1,352 @@
+.section-info-container {
+    width: 100%;
+    margin: 25px 0px 45px 0px;
+    padding: 35px 0px 35px 0px;
+    background: #ffffff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 0px 4px 4px #9b9b9b;
+}
+
+.title-top-info {
+    font-family: 'TTNorm-bold';
+    font-size: 24px;
+    padding: 0px 0px 30px 0px;
+}
+
+.text-info {
+    font-family: 'TTNorm-reg';
+    font-size: 24px;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+
+.description-info {
+    font-family: 'TTNorm-reg';
+    font-size: 24px;
+    margin: 0px 0px 18px 0px;
+    padding: 0px 0px 0px 15px;
+    border-left: 6px solid var(--pro-color);
+}
+
+.title-bottom-info {
+    font-family: 'TTNorm-bold';
+    font-size: 23px;
+}
+
+/* расписание перерывов начало*/
+.section-time-container {
+    position: relative;
+}
+
+.time-element {
+    display: flex;
+}
+
+.time-element .time {
+    font-family: 'TTNorm-bold';
+    font-size: 28px;
+    width: 20%;
+}
+
+.time-element .text {
+    font-family: 'TTNorm-reg';
+    font-size: 28px;
+    width: 80%;
+}
+
+.time-element:not(:last-child) {
+    padding: 0px 0px 40px 0px;
+}
+
+/* расписание перерывов конец*/
+
+/* карточка с расписанием лекторов начало*/
+.section-lector-container {
+    width: 100%;
+    margin: 45px 0px 45px 0px;
+    padding: 35px 0px 35px 0px;
+    background: #ffffff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 0px 4px 4px #9b9b9b;
+}
+
+.lector-title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.lector-time {
+    font-size: 28px;
+    font-family: 'TTNorm-bold';
+    width: 20%;
+}
+
+.lector-title {
+    font-size: 28px;
+    font-family: 'TTNorm-bold';
+    width: 80%;
+}
+
+.about-lector-container {
+    display: flex;
+    margin: 50px 0px 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-lector-text {
+    font-family: 'TTNorm-reg';
+    font-size: 28px;
+    padding: 0px 0px 0px 15px;
+    border-left: 6px solid var(--pro-color);
+}
+
+.lector-face {
+    display: block;
+}
+
+.lector-name {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lector-name__mobile {
+    display: none;
+}
+
+.lector-name p {
+    font-family: 'TTNorm-bold';
+    font-size: 30px;
+    padding: 10px;
+    background: var(--pro-color);
+}
+
+.sono-text {
+    padding: 55px 0px 0px 0px;
+    text-align: right;
+    font-family: 'TTNorm-reg';
+    font-size: 17px;
+}
+
+/* карточка с расписанием лекторов конец*/
+@media(max-width: 980px) {
+    .footer-discount::before {
+        left: 11%;
+        top: 10px;
+    }
+}
+
+@media (max-width:892px) {
+    .time-element .time {
+        width: 31%;
+    }
+
+    .lector-title-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lector-time,
+    .time-element .text,
+    .lector-title {
+        width: 100%;
+    }
+}
+
+@media (max-width:850px) {
+    .footer-discount::before {
+        left: 9%;
+        top: 16px;
+    }
+}
+
+
+@media (max-width:780px) {
+
+    .title-top-info,
+    .text-info,
+    .title-bottom-info,
+    .time-element .time,
+    .time-element .text,
+    .lector-title,
+    .lector-time {
+        font-size: 24px;
+    }
+
+    .description-info,
+    .about-lector-text {
+        font-size: 21px;
+    }
+
+
+}
+
+
+
+@media (max-width:690px) {
+
+    .title-top-info,
+    .text-info,
+    .title-bottom-info,
+    .time-element .time,
+    .time-element .text,
+    .lector-title,
+    .lector-time,
+    .footer-text {
+        font-size: 22px;
+    }
+
+    .description-info,
+    .about-lector-text {
+        font-size: 20px;
+    }
+
+    .about-lector-container {
+        display: flex;
+        margin: 50px 0px 20px 0px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .lector-name__mobile {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lector-name__mobile p {
+        font-family: 'TTNorm-bold';
+        font-size: 20px;
+        padding: 6px;
+        background: var(--pro-color);
+        margin: 11px 0px 20px 0px;
+    }
+
+    .lector-name {
+        display: none;
+    }
+
+    .lector-face {
+        width: 175px;
+        height: 175px;
+    }
+
+    .about-lector-text {
+        border-left: 4px solid var(--pro-color);
+    }
+
+    .sono-text {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:605px) {
+
+    .title-top-info,
+    .text-info,
+    .title-bottom-info,
+    .time-element .time,
+    .time-element .text,
+    .lector-title,
+    .lector-time,
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .description-info,
+    .about-lector-text {
+        font-size: 20px;
+    }
+
+    .time-element .time {
+        width: 34%;
+    }
+}
+
+@media (max-width:525px) {
+
+    .title-top-info,
+    .text-info,
+    .title-bottom-info,
+    .time-element .time,
+    .time-element .text,
+    .lector-title,
+    .lector-time,
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .description-info,
+    .about-lector-text {
+        font-size: 18px;
+    }
+
+    .time-element .time {
+        width: 40%;
+    }
+
+}
+
+@media (max-width:487px) {
+
+    .title-top-info,
+    .text-info,
+    .title-bottom-info,
+    .time-element .time,
+    .time-element .text,
+    .lector-title,
+    .lector-time,
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .description-info,
+    .about-lector-text {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:470px) {
+    .time-element .time {
+        width: 50%;
+    }
+}
+
+@media (max-width:420px) {
+
+    .title-top-info,
+    .text-info,
+    .title-bottom-info,
+    .time-element .time,
+    .time-element .text,
+    .lector-title,
+    .lector-time,
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .description-info,
+    .about-lector-text {
+        font-size: 16px;
+    }
+
+    .time-element .time {
+        width: 55%;
+    }
+}

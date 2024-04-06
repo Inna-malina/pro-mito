@@ -1,0 +1,133 @@
+.header-img-container {
+    position: relative;
+}
+
+.header-img {
+    width: 100%;
+    background-size: cover;
+}
+
+.header-logo {
+    position: absolute;
+    top: 40px;
+    width: 250px;
+    height: 190px;
+    background-size: cover;
+    left: 36%;
+}
+
+.header-title {
+    text-align: center;
+    font-family: 'TTNorm-bold';
+    font-size: 43px;
+    padding: 45px 0px 45px 0px;
+    border-bottom: 7px solid var(--pro-color);
+}
+
+.header-text-container {
+    margin: 20px 0px 0px 0px;
+    padding: 35px 0px 35px 20px;
+    border-left: 54px solid var(--pro-color);
+    font-family: 'TTNorm-bold';
+    font-size: 30px;
+}
+
+@media (max-width:955px) {
+    .header-logo {
+        top: 40px;
+        width: 160px;
+        height: 124px;
+        left: 38%;
+    }
+}
+
+@media (max-width:780px) {
+    .header-logo {
+        left: 36%;
+    }
+
+    .header-title {
+        font-size: 37px;
+        border-bottom: 4px solid var(--pro-color);
+    }
+
+    .header-text-container {
+        padding: 20px 0px 20px 20px;
+        border-left: 36px solid var(--pro-color);
+        font-size: 24px;
+    }
+}
+
+@media (max-width:690px) {
+    .header-logo {
+        left: 35%;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:605px) {
+    .header-logo {
+        width: 130px;
+        height: 103px;
+        left: 36%;
+    }
+
+    .header-text-container {
+        padding: 20px 0px 20px 20px;
+        border-left: 36px solid var(--pro-color);
+        font-size: 20px;
+    }
+}
+
+@media (max-width:525px) {
+    .header-logo {
+        top: 28px;
+        width: 130px;
+        height: 103px;
+        left: 34%;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:487px) {
+    .header-logo {
+        top: 21px;
+        width: 113px;
+        height: 93px;
+    }
+
+    .header-text-container {
+        padding: 20px 0px 20px 15px;
+        border-left: 25px solid var(--pro-color);
+        font-size: 18px;
+    }
+}
+
+@media (max-width:420px) {
+    .header-logo {
+        top: 21px;
+        width: 91px;
+        height: 76px;
+        left: 36%;
+    }
+
+    .header-title {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 377px) {
+    .header-logo {
+        top: 15px;
+        width: 91px;
+        height: 76px;
+        left: 35%;
+    }
+}

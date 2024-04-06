@@ -1,0 +1,73 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./main.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0px auto;
+    background: var(--bg-color);
+    padding: 0px 0px 108px 0px;
+    overflow-x: hidden;
+    background-image: url('../images/decor.png');
+    background-size: cover;
+}
+
+@media (max-width:690px) {
+    .wrapper {
+        background-image: url('../images/Group-mobile.png');
+        background-size: contain;
+        background-position-y: 144px;
+    }
+}
+
+.center {
+    max-width: 894px;
+    margin: 0px auto;
+}
+
+@media (max-width:960px) {
+    .center {
+        padding: 0px 20px;
+    }
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'TTNorm-bold';
+    src: url('../fonts/TTNorms-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'TTNorm-bold';
+    src: url('../fonts/TTNorms-Bold.woff');
+}
+
+@font-face {
+    font-family: 'TTNorm-reg';
+    src: url('../fonts/TTNorms-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'TTNorm-reg';
+    src: url('../fonts/TTNorms-Regular.ttf');
+}
+
+:root {
+    --pro-color: #cddc50;
+    --bg-color: #f1f1f1;
+}
